@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FASHIN Play - Cosmic Music</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cosmos"></div>
+    <main class="app-shell">
+      <aside class="sidebar-left glass-panel">
+        <div class="brand">
+          <span class="logo">⬡</span>
+          <h1>FASHIN Play</h1>
+        </div>
+
+        <nav>
+          <ul class="menu-block">
+            <li class="active">🏠 Home</li>
+            <li>🔍 Search</li>
+            <li>📁 Your Library</li>
+          </ul>
+          <ul class="menu-block">
+            <li>🧭 Home</li>
+            <li>♡ Liked Songs</li>
+          </ul>
+        </nav>
+
+        <div class="couple-tag">FAIZ ❤️ SHINTA</div>
+        <div class="mini-cover"></div>
+      </aside>
+
+      <section class="content glass-panel">
+        <header class="topbar">
+          <button class="icon-btn">☰</button>
+          <label class="search-wrap">
+            <input type="text" placeholder="Search" />
+          </label>
+          <button class="premium">Premium</button>
+          <div class="profile-pill">FAIIZ</div>
+        </header>
+
+        <div class="hero-text">
+          <h2>Selamat malam bbyy...</h2>
+          <p>FAIZ ❤️ SHINTA</p>
+        </div>
+
+        <section class="featured glass-inner">
+          <h3>* Featured Songs</h3>
+          <div class="card-grid" id="songGrid"></div>
+          <button class="create-playlist">＋ Create Playlist</button>
+        </section>
+      </section>
+
+      <aside class="sidebar-right glass-panel">
+        <h3>Up Next</h3>
+        <div class="big-cover"></div>
+        <h4 id="currentSong">Die With A Smile</h4>
+        <p class="artist" id="currentArtist">Lady Gaga</p>
+
+        <div class="follow-head">
+          <span>👤 Follow</span>
+          <span>›</span>
+        </div>
+        <ul class="queue" id="queueList"></ul>
+      </aside>
+
+      <footer class="player glass-panel">
+        <div class="now-playing">
+          <div class="thumb"></div>
+          <div>
+            <h4 id="footerSong">Die With A Smile</h4>
+            <p id="footerArtist">Lady Gaga</p>
+          </div>
+        </div>
+
+        <div class="controls">
+          <div class="control-row">
+            <button>⇄</button>
+            <button>⏮</button>
+            <button class="play" id="playBtn">▶</button>
+            <button>⏭</button>
+            <button>↻</button>
+          </div>
+          <div class="progress-row">
+            <span id="currentTime">0:29</span>
+            <input id="progress" type="range" min="0" max="209" value="29" />
+            <span id="duration">3:29</span>
+          </div>
+        </div>
+
+        <div class="right-foot">
+          <span>🔊</span>
+          <input type="range" min="0" max="100" value="70" />
+          <span class="couple">FAIZ ❤️ SHINTA</span>
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
